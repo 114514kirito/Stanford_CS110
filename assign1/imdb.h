@@ -5,7 +5,7 @@
 
 class imdb {
  public:
-  
+ 
 /**
  * Constructor: imdb
  * -----------------
@@ -36,7 +36,7 @@ class imdb {
 /**
  * Method: getCredits
  * ------------------
- * Searches for an actor/actress's list of movie credits.  The list 
+ * Searches for an actor/actress's list of movie credits.  The list
  * of credits is returned via the second argument, which you'll note
  * is a non-const vector<film> reference.  If the specified actor/actress
  * isn't in the database, then the films vector will be left empty.
@@ -47,7 +47,7 @@ class imdb {
  * @return true if and only if the specified actor/actress appeared in the
  *              database, and false otherwise.
  */
-  
+
   bool getCredits(const std::string& player, std::vector<film>& films) const;
 
 /**
@@ -76,13 +76,13 @@ class imdb {
  * Self-explantory.
  */
   ~imdb();
-  
+
  private:
   static const char *const kActorFileName;
   static const char *const kMovieFileName;
   const void *actorFile;
   const void *movieFile;
-  
+
   // everything below here is complicated and needn't be touched.
   // you're free to investigate, but you're on your own.
   struct fileInfo {
@@ -90,7 +90,7 @@ class imdb {
     size_t fileSize;
     const void *fileMap;
   } actorInfo, movieInfo;
-  
+
   static const void *acquireFileMap(const std::string& fileName, struct fileInfo& info);
   static void releaseFileMap(struct fileInfo& info);
 
