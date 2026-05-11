@@ -9,7 +9,8 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
   if(argc <3 ){
-    cout << "输入错误" << "\n";
+    cout << "用法: " << argv[0] << " <演员1> <演员2>" << endl;
+    cout << "示例: " << argv[0] << " \"Tom Hanks\" \"Leonardo DiCaprio\"" << endl;
     return 0;
   }
   imdb imdb {kIMDBDataDirectory};
@@ -79,5 +80,5 @@ int main(int argc, char *argv[]) {
 
 
   }
-  cout << "没找到" << "\n";
+  cout << "未能在6步之内找到从 " << player1 << " 到 " << player2 << " 的连接路径。" << endl;
 }
