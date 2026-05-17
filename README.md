@@ -4,8 +4,9 @@
 
 Get from [this Repo](https://github.com/sauronalexander/cs110-1), and extract the starter code.
 
-- [√] Assignment 1
-- [ ] Assignment 2
+- [x] Assignment 1
+
+- [x] Assignment 2
 - [ ] Assignment 3
 - [ ] Assignment 4
 - [ ] Assignment 5
@@ -23,4 +24,4 @@ The directory is defined in the `imdb-utils.h`.
 const std::string kIMDBDataDirectory("/usr/class/cs110/samples/assign1/");
 ```
 
-Just create the directory and put the data into this directory. Everything will be fine.
+Just change it to your own working directory，Everything will be fine.
